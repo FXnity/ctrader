@@ -3,12 +3,12 @@ package ctrader
 import (
 	"context"
 	"fmt"
+	"log/slog"
 	"sync"
 	"sync/atomic"
 	"time"
 
 	"github.com/satori/uuid"
-	"golang.org/x/exp/slog"
 	"google.golang.org/protobuf/proto"
 
 	"github.com/fxnity/ctrader/openapi"
