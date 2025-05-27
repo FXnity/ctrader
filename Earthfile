@@ -47,7 +47,7 @@ go-mod-linter:
     && git diff --cached --exit-code
 
 update-pkg-go-dev:
-  RUN curl https://proxy.golang.org/github.com/diegobernardes/ctrader/@v/main.info
+  RUN curl https://proxy.golang.org/github.com/fxnity/ctrader/@v/main.info
 
 # compile-proto is used to compile cTrader Open API protobuf files. In case the 'protoc-gen-go' version changes, it's
 # recommended to run 'go mod tidy'.

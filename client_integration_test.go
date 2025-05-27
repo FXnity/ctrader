@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slog"
 
-	"github.com/diegobernardes/ctrader/openapi"
+	"github.com/fxnity/ctrader/openapi"
 )
 
 func TestClientIntegration(t *testing.T) {

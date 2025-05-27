@@ -1,6 +1,6 @@
-module github.com/diegobernardes/ctrader
+module github.com/fxnity/ctrader
 
-go 1.22
+go 1.24
 
 require (
 	github.com/samber/lo v1.45.0

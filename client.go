@@ -11,7 +11,7 @@ import (
 	"golang.org/x/exp/slog"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/diegobernardes/ctrader/openapi"
+	"github.com/fxnity/ctrader/openapi"
 )
 
 type clientTransport interface {

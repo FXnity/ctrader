@@ -84,7 +84,7 @@ linters-settings:
     sections:
       - standard
       - default
-      - prefix(github.com/diegobernardes/ctrader)
+      - prefix(github.com/fxnity/ctrader)
 
   gocritic:
     enabled-tags:

@@ -7,7 +7,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/diegobernardes/ctrader/openapi"
+	"github.com/fxnity/ctrader/openapi"
 )
 
 type undefinedProtobufResourceError[T string | uint32] struct {

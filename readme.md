@@ -4,18 +4,6 @@ This repository contains a Go SDK to consume [cTrader OpenAPI](https://help.ctra
 
 ## Requirements
 - Go 1.22 or higher.
-- Earthly (optional).
-
-## Usage
-Check the `_test.go` files.
-
-## Testing
-```shell
-# Set the following environment variables:
-# - CTRADER_CLIENT_ID
-# - CTRADER_SECRET
-# - CTRADER_ACCOUNT_ID
-# - CTRADER_TOKEN,
 
 # Execute the tests directly with Go:
 go test -tags integration -race ./...
@@ -37,7 +25,7 @@ The easiest way is to use the
 [playground](https://help.ctrader.com/open-api/account-authentication/#using-the-playground).
 
 ### How can I upgrade cTrader OpenAPI protobuf files?
-- Open the [Earthfile](https://github.com/diegobernardes/ctrader/blob/main/Earthfile.md) and edit the 
+- Open the [Earthfile](https://github.com/fxnity/ctrader/blob/main/Earthfile.md) and edit the 
 `+compile-proto` target.
 - Execute the target `earthly +compile-proto`.
 - Sync the dependencies `go mod tidy`.
