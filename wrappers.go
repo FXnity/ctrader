@@ -5,6 +5,19 @@ import (
 	"github.com/fxnity/ctrader/openapi"
 )
 
+func (c *Client) RefreshAccessToken(refreshToken string) (string, error) {
+	refreshTokenReq := &openapi.ProtoOARefreshTokenReq{
+		RefreshToken: &refreshToken,
+	}
+	resp, err := Command[*openapi.ProtoOARefreshTokenReq, *openapi.ProtoOARefreshTokenRes](
+		context.Background(), c, refreshTokenReq,
+	)
+	if err != nil {
+		return "", err
+	}
+	return resp.GetAccessToken(), nil
+}
+
 func (c *Client) AccountList(accessToken string) ([]*openapi.ProtoOACtidTraderAccount, error) {
 	accountListReq := &openapi.ProtoOAGetAccountListByAccessTokenReq{
 		AccessToken: &accessToken,
